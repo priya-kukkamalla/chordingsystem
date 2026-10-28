@@ -1,6 +1,6 @@
 //
-//  T9SystemApp.swift
-//  T9System
+//  T9SystemMacApp.swift
+//  T9SystemMac
 //
 //  Created by Anjali Priya on 5/13/26.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct T9SystemApp: App {
+struct ChordingSystemMacApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MacContentView()
         }
     }
 }

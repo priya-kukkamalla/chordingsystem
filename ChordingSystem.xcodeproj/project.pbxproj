@@ -6,14 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6571F5FD2FB5233900D96160 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571F5FC2FB5233200D96160 /* SessionManager.swift */; };
+		6571F5FE2FB5247300D96160 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571F5FC2FB5233200D96160 /* SessionManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		6571F5DF2FB522C700D96160 /* T9System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T9System.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		650BC0EB2FB58B53007759EE /* T9System-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "T9System-Info.plist"; sourceTree = "<group>"; };
+		6571F5DF2FB522C700D96160 /* ChordingSystemIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordingSystemIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6571F5F12FB5230A00D96160 /* ChordingSystemMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordingSystemMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6571F5FC2FB5233200D96160 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		650BC0ED2FB58BD3007759EE /* Exceptions for "ChordingSystemMac" folder in "ChordingSystemMac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6571F5F02FB5230A00D96160 /* ChordingSystemMac */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6571F5E12FB522C700D96160 /* T9System */ = {
+		6571F5E12FB522C700D96160 /* ChordingSystemIOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = T9System;
+			path = ChordingSystemIOS;
+			sourceTree = "<group>";
+		};
+		6571F5F22FB5230A00D96160 /* ChordingSystemMac */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				650BC0ED2FB58BD3007759EE /* Exceptions for "ChordingSystemMac" folder in "ChordingSystemMac" target */,
+			);
+			path = ChordingSystemMac;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +52,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6571F5EE2FB5230A00D96160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6571F5D62FB522C700D96160 = {
 			isa = PBXGroup;
 			children = (
-				6571F5E12FB522C700D96160 /* T9System */,
+				650BC0EB2FB58B53007759EE /* T9System-Info.plist */,
+				6571F5FC2FB5233200D96160 /* SessionManager.swift */,
+				6571F5E12FB522C700D96160 /* ChordingSystemIOS */,
+				6571F5F22FB5230A00D96160 /* ChordingSystemMac */,
 				6571F5E02FB522C700D96160 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +76,8 @@
 		6571F5E02FB522C700D96160 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6571F5DF2FB522C700D96160 /* T9System.app */,
+				6571F5DF2FB522C700D96160 /* ChordingSystemIOS.app */,
+				6571F5F12FB5230A00D96160 /* ChordingSystemMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6571F5DE2FB522C700D96160 /* T9System */ = {
+		6571F5DE2FB522C700D96160 /* ChordingSystemIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6571F5EA2FB522CA00D96160 /* Build configuration list for PBXNativeTarget "T9System" */;
+			buildConfigurationList = 6571F5EA2FB522CA00D96160 /* Build configuration list for PBXNativeTarget "ChordingSystemIOS" */;
 			buildPhases = (
 				6571F5DB2FB522C700D96160 /* Sources */,
 				6571F5DC2FB522C700D96160 /* Frameworks */,
@@ -61,13 +98,35 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6571F5E12FB522C700D96160 /* T9System */,
+				6571F5E12FB522C700D96160 /* ChordingSystemIOS */,
 			);
-			name = T9System;
+			name = ChordingSystemIOS;
 			packageProductDependencies = (
 			);
 			productName = T9System;
-			productReference = 6571F5DF2FB522C700D96160 /* T9System.app */;
+			productReference = 6571F5DF2FB522C700D96160 /* ChordingSystemIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6571F5F02FB5230A00D96160 /* ChordingSystemMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6571F5F92FB5230C00D96160 /* Build configuration list for PBXNativeTarget "ChordingSystemMac" */;
+			buildPhases = (
+				6571F5ED2FB5230A00D96160 /* Sources */,
+				6571F5EE2FB5230A00D96160 /* Frameworks */,
+				6571F5EF2FB5230A00D96160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6571F5F22FB5230A00D96160 /* ChordingSystemMac */,
+			);
+			name = ChordingSystemMac;
+			packageProductDependencies = (
+			);
+			productName = T9SystemMac;
+			productReference = 6571F5F12FB5230A00D96160 /* ChordingSystemMac.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -83,9 +142,12 @@
 					6571F5DE2FB522C700D96160 = {
 						CreatedOnToolsVersion = 26.5;
 					};
+					6571F5F02FB5230A00D96160 = {
+						CreatedOnToolsVersion = 26.5;
+					};
 				};
 			};
-			buildConfigurationList = 6571F5DA2FB522C700D96160 /* Build configuration list for PBXProject "T9System" */;
+			buildConfigurationList = 6571F5DA2FB522C700D96160 /* Build configuration list for PBXProject "ChordingSystem" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,13 +161,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6571F5DE2FB522C700D96160 /* T9System */,
+				6571F5DE2FB522C700D96160 /* ChordingSystemIOS */,
+				6571F5F02FB5230A00D96160 /* ChordingSystemMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6571F5DD2FB522C700D96160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6571F5EF2FB5230A00D96160 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,6 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6571F5FD2FB5233900D96160 /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6571F5ED2FB5230A00D96160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6571F5FE2FB5247300D96160 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +330,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69C9W9Z26V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "T9System-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect to Mac over local network\nUsed to connect to Mac over local network\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +364,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69C9W9Z26V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "T9System-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect to Mac over local network\nUsed to connect to Mac over local network\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,10 +391,100 @@
 			};
 			name = Release;
 		};
+		6571F5FA2FB5230C00D96160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69C9W9Z26V;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChordingSystemMac/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect to Mac over local network";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.priyak.T9SystemMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6571F5FB2FB5230C00D96160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69C9W9Z26V;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChordingSystemMac/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect to Mac over local network";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.priyak.T9SystemMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6571F5DA2FB522C700D96160 /* Build configuration list for PBXProject "T9System" */ = {
+		6571F5DA2FB522C700D96160 /* Build configuration list for PBXProject "ChordingSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6571F5E82FB522CA00D96160 /* Debug */,
@@ -318,11 +493,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6571F5EA2FB522CA00D96160 /* Build configuration list for PBXNativeTarget "T9System" */ = {
+		6571F5EA2FB522CA00D96160 /* Build configuration list for PBXNativeTarget "ChordingSystemIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6571F5EB2FB522CA00D96160 /* Debug */,
 				6571F5EC2FB522CA00D96160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6571F5F92FB5230C00D96160 /* Build configuration list for PBXNativeTarget "ChordingSystemMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6571F5FA2FB5230C00D96160 /* Debug */,
+				6571F5FB2FB5230C00D96160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
